@@ -1,4 +1,4 @@
-package src.pontoInteligente.api.repository;
+package src.pontoInteligente.api.repositories;
 
 import src.pontoInteligente.api.entities.Funcionario;
 
@@ -18,6 +18,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import src.pontoInteligente.api.entities.Empresa;
 import src.pontoInteligente.api.enums.PerfilEnum;
+import src.pontoInteligente.api.repositories.EmpresaRepository;
+import src.pontoInteligente.api.repositories.FuncionarioRepository;
 import src.pontoInteligente.api.utils.PasswordUtils;
 
 @RunWith(SpringRunner.class)

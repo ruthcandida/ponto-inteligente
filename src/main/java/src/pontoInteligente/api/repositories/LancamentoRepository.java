@@ -1,4 +1,4 @@
-package src.pontoInteligente.api.repository;
+package src.pontoInteligente.api.repositories;
 
 import java.util.List;
 
