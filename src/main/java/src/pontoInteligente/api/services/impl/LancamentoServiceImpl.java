@@ -11,6 +11,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import src.pontoInteligente.api.entities.Funcionario;
 import src.pontoInteligente.api.entities.Lancamento;
 import src.pontoInteligente.api.repositories.LancamentoRepository;
 import src.pontoInteligente.api.services.LancamentoService;
@@ -29,9 +30,9 @@ public class LancamentoServiceImpl implements LancamentoService {
 	}
 	
 	@Cacheable("lancamentoPorId")
-	public Optional buscarPorId(Long id) {
+	public Optional<Lancamento> buscarPorId(Long id) {
 		log.info("Buscando um lançamento pelo ID {}", id);
-		return Optional.ofNullable(this.lancamentoRepository.findById(id));
+		return Optional.ofNullable(this.lancamentoRepository.findById(id)).get();
 	}
 	
 	@CachePut("lancamentoPorId")
