@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
-@SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
+@SpringBootApplication() // exclude = { SecurityAutoConfiguration.class }
 public class ProntoInteligenteApplication extends SpringBootServletInitializer {
 	
 	public static void main(String[] args) {
