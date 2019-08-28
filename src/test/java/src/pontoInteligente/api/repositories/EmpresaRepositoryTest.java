@@ -1,9 +1,10 @@
-package src.pontoInteligente.api.repository;
+package src.pontoInteligente.api.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.transaction.annotation.Transactional;
 
 import src.pontoInteligente.api.entities.Empresa;
+import src.pontoInteligente.api.repositories.EmpresaRepository;
 
 import static org.junit.Assert.assertEquals;
 
